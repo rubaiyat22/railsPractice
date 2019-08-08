@@ -4,4 +4,8 @@
   <%= @user.name%>
   <strong>Email:</strong>
   <%= @user.email%>
+
+  <%= link_to 'Edit', edit_user_path(@user) %>
+  <%= link_to 'Delete', user_path(@user),
+	   method: :delete %>
 </p>
